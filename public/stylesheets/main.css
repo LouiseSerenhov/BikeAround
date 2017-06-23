@@ -1,0 +1,27 @@
+body {
+    background: #fff;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#jumbotron {
+    background: ff3655;
+}
+
+.knapp {
+    padding-left: 10px;
+}
+
+.navbar {
+    background-color: #acbaa0 !important;
+}

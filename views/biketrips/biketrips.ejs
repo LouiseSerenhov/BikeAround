@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+
+ <div class="container">
+     <header class="jumbotron">
+         <div class="container">
+             <h1>Välkommen till BikeAround</h1>
+             <p>En hemsida om hobby-cykling driven av Alex, Madde och Lollo! </p>
+             <p>
+                <a class="btn btn-primary btn-large" href="/biketrips/new">Lägg till ny cykelsemester!</a>
+             </p>
+         </div>
+     </header>
+
+
+
+    <div class ="row">
+      <% biketrips.forEach(function(biketrip){ %>
+    <div>
+        <div class="col-md-3 col-sm-6">
+             <div class="thumbnail">
+        <img src="<%= biketrip.image %>"></img>
+         <div class="caption">
+        <h4><%= biketrip.name %></h4>
+        </div>
+        <div class="knapp">
+        <p> <a href="/biketrips/<%= biketrip._id %>" class="btn btn-primary">Mer information</a></p>
+        </div>
+    </div>
+      </div>
+      </div>
+    <% });%>
+     
+    </div>
+    </div>
+    
+    <% include ../partials/footer %>
